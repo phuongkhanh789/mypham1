@@ -1,0 +1,194 @@
+* {
+	margin:0px;
+	padding:0px;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: #dadada;
+}
+ 
+.clearfix:after {
+    display:block;
+    clear:both;          
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none; /*bỏ gạch dưới*/
+}
+.containerr{
+    margin: 0px auto;
+    max-width: 960px; /*Giãn ra giữa*/
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Đổi kiểu chữ*/
+    color: rgb(39, 30, 30); /*Cố định văn bản */
+    background-color: white;/*Cố định văn bản */
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 20px 0px; /*Thanh menu to hơn*/
+    transition: all 0.5s ease-in-out;/*làm chậm quá trình khi kéo xuống*/
+    z-index: 10;/*Cố định để đưa một cái gì đó đã nằm trên trước đó lên*/
+    background-color: #000;
+}
+header.sticky{
+    background: white;
+    opacity: 0.9;
+    padding: 15px 0px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+header.sticky #logo{
+    color: #000;
+}
+header.sticky #main-menu a {
+    color: #000;
+}
+.inner-header {
+    display: flex; /*chữ nằm ngang*/
+    justify-content: space-between; /*Chữ logo đi lên*/
+    align-items: center; /*Chữ logo nằm giữa*/
+}
+#logo{
+    color: #fff;
+    text-transform: uppercase; /*viết hoa*/
+    font-weight: bold;/*viết hoa*/
+    font-size: 1.5rem; /*Chữ logo to lên*/
+    letter-spacing: 2px; /*Chữ logo giãn ra*/
+}
+ul#main-menu{
+    display: flex;
+}
+ul#main-menu a{
+    text-transform: uppercase; /*viết hoa*/
+    padding: 10px 20px; /*Giãn chữ ra*/
+    color: #fff; /*Trang chủ, blog, liên hệ*/
+    display: block;/*độ rộng thanh menu*/
+    font-weight: bold;
+}
+#banner{
+    background: url(image/121.jpg);
+    min-height: 480px;
+    width: 100%;
+    background-size: cover;
+}
+#content h1{
+    padding: 30px 0px;/*Chỗ cố định header đi xuống*/
+}
+#content p{
+    margin-bottom: 1.2rem;/*Chữ rộng ra*/
+}
+#content p:nth-child(2) i{
+    color: red;
+    font-size: 22px;
+}
+#banner{
+    min-height: 480px;
+    width: 100%;
+    background-size: cover;
+}
+#content h1{
+    padding: 30px 0px;/*Chỗ cố định header đi xuống*/
+}
+#content p{
+    margin-bottom: 1.2rem;/*Chữ rộng ra*/
+}
+.clearfix:after {
+    display:block;
+    clear:both;   
+}
+.wrapper {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2); 
+    background:#FCFCFC;
+}
+ 
+/*----- Menu Outline -----*/
+
+.menu {
+    width:1000px;
+    margin:0px auto;
+	background:#FCFCFC;
+	height: 50px;
+	margin-top: 75px;
+}
+ 
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:'Ek Mukta';
+}
+ 
+.menu a {
+    transition:all linear 0.15s;
+    color:#919191;
+	text-decoration:none;
+}
+ 
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#0C71C3;
+}
+ 
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+ 
+/*----- css cho phần menu cha -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:12px;
+}
+ 
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    color: black;
+}
+ 
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#FFFFFF;
+}
+ 
+/*----css cho menu con----*/
+
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background: #FFFFFF;
+}
+
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+ 
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#FFFFFF;
+}
