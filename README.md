@@ -3,7 +3,7 @@
 ## Mô tả : Thêm xoá sửa sản phẩm, danh mục, dung tích, số lượng, đơn đặt hàng, đăng ký, đăng nhập bằng PHP và trang mua hàng, chi tiết sản phẩm, thanh toán, xem các sản phẩm liên quan, trang chủ, xem tất cả sản phẩm của cửa hàng.
 
 ### Yêu cầu : tải phần mềm Xampp 7.4.20 trên link "https://www.apachefriends.org/download.html" để có thể chạy được CSDL MYPHPADMIN
-tải Fontawesome bản 6.1.1, tải ckeditor và ckfinder. Đặc biệt yêu cầu phải có wifi để có thể thấy được hết toàn bộ nội dung.
+tải Fontawesome bản 6.1.1. Đặc biệt yêu cầu phải có wifi để có thể thấy được hết toàn bộ nội dung.
 
 #### Cách sử dụng dự án
 _ Về phần cơ sở dữ liệu :
